@@ -1,0 +1,259 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #FF735C;
+
+}
+
+.inuse {
+    color: #FF735C;
+    text-decoration: underline;
+
+}
+
+
+.flex-end {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+}
+
+
+.navbar-list {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.w40 {
+    width: 40%;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+
+}
+
+.navigation li {
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+
+
+.coralBox {
+    background-color: #FF735C;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 58%;
+}
+
+
+
+.logoContainer {
+    position: relative;
+    top: 47vh;
+    width: 100%;
+    text-align: right;
+}
+
+
+.logoContainer h1 {
+    font-family: 'Patua One', cursive;
+    color: white;
+    font-size: 8rem;
+    margin: 0%;
+    z-index: 2;
+    font-weight: 500;
+
+}
+
+.logoK {
+    letter-spacing: 2px;
+    line-height: 30%;
+}
+
+
+.section {
+    height: 90vh;
+    width: 100%
+}
+
+.mainSection {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: [first] 58% [line2] 42% [end];
+    grid-template-rows: [row1-start] 1fr [row1-end] 1fr [third-line] 1fr;
+    grid-template-areas: "box quote" "box text" "box button";
+
+}
+
+.quote {
+    grid-area: quote;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button {
+    grid-area: button;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.quoteMainText {
+    font-size: 2rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+    font-weight: lighter;
+    margin: 0;
+
+}
+
+
+.quoteSpeechMarks {
+    color: #FF735C;
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 10%;
+}
+
+.author {
+    font-size: 0.75rem;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    font-style: italic;
+}
+
+
+.aboutMe {
+    grid-area: text;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: lighter;
+}
+
+.aboutMeText {
+    font-size: 2rem;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-weight: lighter;
+    margin: 0;
+}
+
+
+.buttonStyle {
+    border-radius: 30px;
+    border-color: #FF735C;
+    background-color: #FF735C;
+    font-family: 'Quicksand', sans-serif;
+    width: 218px;
+    height: 58px;
+    font-weight: bold !important;
+    border: none;
+    line-height: 58px;
+    margin: 1%;
+}
+
+.buttonHover:hover {
+    background-color: #fcb7ac;
+
+}
+
+.buttonContainer {
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 1%
+}
+
+.Subtitlecontainer {
+    width: 100%;
+    height: 260px;
+    margin: 10%;
+
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1%;
+
+}
+
+
+.footerRow {
+    height: 260px;
+    width: 100%;
+    background-color: lightgrey;
+
+}
+
+
+
+.footerLogo {
+    font-family: 'Patua One', cursive;
+    font-size: 3rem;
+    line-height: 1;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    padding-right: 2%;
+    padding-left: 5%;
+    float: left;
+
+
+}
+
+.footerList {
+    text-align: end;
+    padding-top: 5%;
+    line-height: 40px;
+    padding-right: 2rem;
+}
+
+.footerList li {
+    list-style-type: none;
+}
