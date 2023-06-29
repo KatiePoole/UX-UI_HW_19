@@ -4,6 +4,10 @@ body {
     margin: 0%;
 }
 
+h1 {
+    margin: 0%;
+}
+
 .inline-block {
     display: inline-block;
     vertical-align: top;
@@ -104,7 +108,7 @@ a:hover {
 }
 
 
-.section {
+.homepageSection {
     height: 90vh;
     width: 100%
 }
@@ -115,7 +119,9 @@ a:hover {
     display: grid;
     grid-template-columns: [first] 58% [line2] 42% [end];
     grid-template-rows: [row1-start] 1fr [row1-end] 1fr [third-line] 1fr;
-    grid-template-areas: "box quote" "box text" "box button";
+    grid-template-areas: "box quote"
+        "box text"
+        "box button";
 
 }
 
@@ -125,7 +131,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    padding-top: 10%;
 }
 
 .button {
@@ -173,7 +179,7 @@ a:hover {
 }
 
 .aboutMeText {
-    font-size: 2rem;
+    font-size: 1.75rem;
     text-align: center;
     vertical-align: middle;
     padding-left: 15%;
@@ -256,4 +262,144 @@ a:hover {
 
 .footerList li {
     list-style-type: none;
+}
+
+
+.banner {
+    width: 100%;
+    background-color: #FF735C;
+    height: 200px;
+}
+
+
+.pageHeading {
+    font-family: 'Patua One', cursive;
+    font-size: 3.6rem;
+    line-height: 50px;
+    float: left;
+    text-align: right;
+    width: 25%;
+    display: inline-block;
+    padding-top: 3%;
+
+
+}
+
+
+
+.headingText {
+    font-size: 1.5rem;
+    width: auto;
+    text-align: left;
+    padding-left: 35%;
+    padding-top: 4%;
+    padding-right: 20%;
+
+
+}
+
+.aboutMeSection {
+    display: grid;
+    grid-template-columns: [first] 58% [line2] 42% [end];
+    grid-template-rows: 80% 1fr;
+    grid-template-areas: "textDiv ImgKatie" "cvButton ImgKatie";
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+
+}
+
+.textDiv {
+    grid-area: textDiv;
+}
+
+.aboutMeParagraph {
+    font-size: 1.25rem;
+    float: left;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    text-align: left;
+
+}
+
+
+.cvButton {
+    grid-area: cvButton;
+    text-align: center;
+}
+
+.ImgKatie {
+    grid-area: ImgKatie;
+}
+
+.aboutMeImg {
+    object-fit: contain;
+    max-width: 80%;
+    max-height: 80vh;
+    border: 3px solid #FF735C;
+    border-radius: 15%;
+    margin-left: 10%;
+    margin-top: 5%
+}
+
+.myUXSkills {
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "skillsHeading skillsHeading skillsHeading"
+        "skillsContainer1 skillsContainer2 skillsContainer3";
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.skillsHeading {
+    grid-area: skillsHeading;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+
+.skillsContainer1 {
+    grid-area: skillsContainer1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.pinkBackground {
+    max-height: 100%;
+    height: 80%;
+    max-width: 80%;
+    background-color: #fcb7ac;
+    margin: auto;
+    text-align: center;
+    border-radius: 20%;
+
+}
+
+.skillsText {
+    padding: 0% 15% 0% 15%;
+    margin: 0%;
+}
+
+.pinkBackground h1 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: 0%
+}
+
+.skillsContainer2 {
+    grid-area: skillsContainer2;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.skillsContainer3 {
+    grid-area: skillsContainer3;
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
