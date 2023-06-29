@@ -392,10 +392,11 @@ a:hover {
 }
 
 .pinkBackground {
-    max-height: 100%;
-    height: 100%;
-    max-width: 60%;
-    background-color: #fcb7ac;
+    max-height: 320px;
+    height: 320px;
+    width:280px;
+    max-width: 280px;
+    background-color: #FFD5CE;
     margin: auto;
     text-align: center;
     border-radius: 20%;
@@ -418,3 +419,95 @@ a:hover {
     width: 100%;
     text-align: center;
 }
+
+
+.myTechnicalSkills {
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: "tskillsHeading tskillsHeading tskillsHeading tskillsHeading tskillsHeading"
+        "tskillsContainer1 tskillsContainer2 tskillsContainer3 tskillsContainer4 tskillsContainer4";
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+}
+
+.tskillsHeading {
+grid-area: tskillsHeading;
+text-align: center;
+margin: auto;
+padding-bottom: 5%;
+padding-top: 5%;
+}
+
+.pinkCircle {
+    max-height: 150px;
+    height: 150px;
+    width: 150px;
+    max-width: 150px;
+    background-color: #FFD5CE;
+    margin: auto;
+    text-align: center;
+    border-radius: 100%;
+
+}
+
+.tskillsContainer1 {
+    grid-area: tskillscontainer1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+.tskillsContainer2 {
+    grid-area: tskillscontainer2;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.tskillsContainer3 {
+    grid-area: tskillscontainer3;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+.tskillsContainer4 {
+    grid-area: tskillscontainer4;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+.tskillsContainer5 {
+    grid-area: tskillscontainer5;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.tSkillsLogo {
+    Height:90px;
+    text-align: center;
+   margin-top: 20%;
+   
+}
+ 
+.mazeLogo {
+    width:100px;
+}
+
+.invisionLogo {
+    border-radius: 20%;
+    
+}
+
