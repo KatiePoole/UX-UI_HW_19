@@ -392,10 +392,11 @@ a:hover {
 }
 
 .pinkBackground {
-    max-height: 100%;
-    height: 100%;
-    max-width: 60%;
-    background-color: #fcb7ac;
+    max-height: 320px;
+    height: 320px;
+    width:280px;
+    max-width: 280px;
+    background-color: #FFD5CE;
     margin: auto;
     text-align: center;
     border-radius: 20%;
@@ -418,3 +419,207 @@ a:hover {
     width: 100%;
     text-align: center;
 }
+
+
+.myTechnicalSkills {
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: "tskillsHeading tskillsHeading tskillsHeading tskillsHeading tskillsHeading"
+        "tskillsContainer1 tskillsContainer2 tskillsContainer3 tskillsContainer4 tskillsContainer4";
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+}
+
+.tskillsHeading {
+grid-area: tskillsHeading;
+text-align: center;
+margin: auto;
+padding-bottom: 5%;
+padding-top: 5%;
+}
+
+.pinkCircle {
+    max-height: 150px;
+    height: 150px;
+    width: 150px;
+    max-width: 150px;
+    background-color: #FFD5CE;
+    margin: auto;
+    text-align: center;
+    border-radius: 100%;
+
+}
+
+.tskillsContainer1 {
+    grid-area: tskillscontainer1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+.tskillsContainer2 {
+    grid-area: tskillscontainer2;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.tskillsContainer3 {
+    grid-area: tskillscontainer3;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+.tskillsContainer4 {
+    grid-area: tskillscontainer4;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+.tskillsContainer5 {
+    grid-area: tskillscontainer5;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.tSkillsLogo {
+    Height:90px;
+    text-align: center;
+   margin-top: 20%;
+   
+}
+ 
+.mazeLogo {
+    width:100px;
+}
+
+.invisionLogo {
+    border-radius: 20%;
+    
+}
+
+.myWorkContainer {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "gridArea1 gridArea2 gridArea3"
+    "gridArea4 gridArea5 gridArea6";
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.myWork1 {
+    grid-area: gridArea1;
+    text-align: center;
+ 
+}
+
+.myWork2 {
+    grid-area: gridArea2;
+    text-align: center;
+
+}
+
+.myWork3 {
+    grid-area: gridArea3;
+    text-align: center;
+
+}
+
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 500px;
+    
+    border-radius: 30%;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    height: 500px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back, .flip-card-back-alt {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color:#FFD5CE;
+    color: rgb(5, 5, 5);
+    transform: rotateY(180deg);
+    border-radius: 12%;
+    width: 400px; 
+  }
+
+  .flip-card-back-alt {
+    background-color: #F0F0F0;
+    color: rgb(5, 5, 5);
+    transform: rotateY(180deg);
+    border-radius: 12%;
+    width: 400px; 
+  }
+  .flip-card-back p, .flip-card-back-alt p {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .flip-card-back h1, .flip-card-back-alt h1 {
+    padding: 5%;
+  }
+
+  .workImg {
+    height: 400px;
+    object-fit: contain;
+
+  }
+
+  .buttonSeeMore {
+    border-radius: 30px;
+    border-color: #FF735C;
+    background-color: #FF735C;
+    font-family: 'Quicksand', sans-serif;
+    width: 218px; 
+    height: 58px;
+    font-weight: bold !important;
+    border: none;
+    line-height: 58px;
+    margin: 1%;
+
+  }
