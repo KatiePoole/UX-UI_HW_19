@@ -218,7 +218,7 @@ a:hover {
 
 .Subtitlecontainer {
     width: 100%;
-    height: 260px;
+
     margin: 10%;
 
 }
@@ -226,14 +226,15 @@ a:hover {
 .subtitle {
     text-align: center;
     font-size: 2rem;
-    padding: 1%;
+    padding: 6%;
 
 }
 
 
 .footerRow {
-    height: 260px;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
     background-color: lightgrey;
 
 }
@@ -248,7 +249,7 @@ a:hover {
     padding-bottom: 5%;
     padding-right: 2%;
     padding-left: 5%;
-    float: left;
+
 
 
 }
@@ -257,18 +258,23 @@ a:hover {
     text-align: end;
     padding-top: 5%;
     line-height: 40px;
-    padding-right: 2rem;
+    align-self: flex-end;
 }
 
 .footerList li {
     list-style-type: none;
 }
 
+.heading {
+    height: 320px;
+}
 
 .banner {
     width: 100%;
     background-color: #FF735C;
     height: 200px;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -276,11 +282,11 @@ a:hover {
     font-family: 'Patua One', cursive;
     font-size: 3.6rem;
     line-height: 50px;
-    float: left;
     text-align: right;
     width: 25%;
     display: inline-block;
     padding-top: 3%;
+    padding-left: 1%;
 
 
 }
@@ -291,8 +297,8 @@ a:hover {
     font-size: 1.5rem;
     width: auto;
     text-align: left;
-    padding-left: 35%;
-    padding-top: 4%;
+    padding-left: 10%;
+    padding-top: 2%;
     padding-right: 20%;
 
 
@@ -301,7 +307,7 @@ a:hover {
 .aboutMeSection {
     display: grid;
     grid-template-columns: [first] 58% [line2] 42% [end];
-    grid-template-rows: 80% 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas: "textDiv ImgKatie" "cvButton ImgKatie";
     margin-left: 15%;
     margin-right: 15%;
@@ -311,12 +317,12 @@ a:hover {
 
 .textDiv {
     grid-area: textDiv;
+    height: 100%;
+
 }
 
 .aboutMeParagraph {
     font-size: 1.25rem;
-    float: left;
-    padding-top: 15%;
     padding-bottom: 10%;
     text-align: left;
 
@@ -342,37 +348,8 @@ a:hover {
     margin-top: 5%
 }
 
-/*
-
-.myUXSkills {
-    height: 60vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20% 80%;
-    grid-template-areas: "skillsHeading skillsHeading skillsHeading"
-        "skillsContainer1 skillsContainer2 skillsContainer3";
-    margin-left: 15%;
-    margin-right: 15%;
-}
 
 
-.skillsContainer1 {
-    grid-area: skillsContainer1;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-
-
-.skillsContainer2 {
-    grid-area: skillsContainer2;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-
-
-*/
 
 .skillsHeading {
     text-align: center;
@@ -386,20 +363,21 @@ a:hover {
     margin-left: 10%;
     margin-right: 10%;
     height: 40vh;
-    display:flex;
+    display: flex;
     flex-direction: row;
 
 }
 
 .pinkBackground {
-    max-height: 320px;
-    height: 320px;
-    width:280px;
-    max-width: 280px;
+    max-height: 100%;
+    height: 100%;
+    width: 80%;
+    max-width: 80%;
     background-color: #FFD5CE;
-    margin: auto;
     text-align: center;
-    border-radius: 20%;
+    border-radius: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 
 }
 
@@ -424,8 +402,8 @@ a:hover {
 .myTechnicalSkills {
     height: 30vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60% 40%;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
     grid-template-areas: "tskillsHeading tskillsHeading tskillsHeading tskillsHeading tskillsHeading"
         "tskillsContainer1 tskillsContainer2 tskillsContainer3 tskillsContainer4 tskillsContainer4";
     margin-left: 15%;
@@ -434,35 +412,35 @@ a:hover {
 }
 
 .tskillsHeading {
-grid-area: tskillsHeading;
-text-align: center;
-margin: auto;
-padding-bottom: 5%;
-padding-top: 5%;
+    grid-area: tskillsHeading;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 .pinkCircle {
-    max-height: 150px;
-    height: 150px;
-    width: 150px;
-    max-width: 150px;
+    max-height: 10em;
+    height: 10em;
+    width: 10em;
+    max-width: 10em;
     background-color: #FFD5CE;
-    margin: auto;
+    margin: 0%;
     text-align: center;
-    border-radius: 100%;
+    border-radius: 100px;
 
 }
 
-.tskillsContainer1 {
-    grid-area: tskillscontainer1;
+.tSkillsContainer1 {
+    grid-area: tskillsContainer1;
     height: 100%;
     width: 100%;
     text-align: center;
 
 }
 
-.tskillsContainer2 {
-    grid-area: tskillscontainer2;
+.tSkillsContainer2 {
+    grid-area: tskillsContainer2;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -470,24 +448,24 @@ padding-top: 5%;
 }
 
 
-.tskillsContainer3 {
-    grid-area: tskillscontainer3;
+.tSkillsContainer3 {
+    grid-area: tskillsContainer3;
     height: 100%;
     width: 100%;
     text-align: center;
 
 }
 
-.tskillsContainer4 {
-    grid-area: tskillscontainer4;
+.tSkillsContainer4 {
+    grid-area: tskillsContainer4;
     height: 100%;
     width: 100%;
     text-align: center;
 
 }
 
-.tskillsContainer5 {
-    grid-area: tskillscontainer5;
+.tSkillsContainer5 {
+    grid-area: tskillsContainer5;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -496,19 +474,20 @@ padding-top: 5%;
 
 
 .tSkillsLogo {
-    Height:90px;
+    object-fit: contain;
+    Height: 90px;
     text-align: center;
-   margin-top: 20%;
-   
+    margin-top: 20%;
+
 }
- 
+
 .mazeLogo {
-    width:100px;
+    width: 100px;
 }
 
 .invisionLogo {
     border-radius: 20%;
-    
+
 }
 
 .myWorkContainer {
@@ -517,7 +496,7 @@ padding-top: 5%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "gridArea1 gridArea2 gridArea3"
-    "gridArea4 gridArea5 gridArea6";
+        "gridArea4 gridArea5 gridArea6";
     margin-left: 5%;
     margin-right: 5%;
 
@@ -526,7 +505,7 @@ padding-top: 5%;
 .myWork1 {
     grid-area: gridArea1;
     text-align: center;
- 
+
 }
 
 .myWork2 {
@@ -548,78 +527,226 @@ padding-top: 5%;
     background-color: transparent;
     width: 100%;
     height: 500px;
-    
+
     border-radius: 30%;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
     position: relative;
     height: 500px;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back, .flip-card-back-alt {
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back,
+.flip-card-back-alt {
     position: absolute;
     width: 100%;
     height: 400px;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
+    /* Safari */
     backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
+}
 
-  
-  /* Style the back side */
-  .flip-card-back {
-    background-color:#FFD5CE;
+/* Style the front side (fallback if image is missing) */
+
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #FFD5CE;
     color: rgb(5, 5, 5);
     transform: rotateY(180deg);
     border-radius: 12%;
-    width: 400px; 
-  }
+    width: 400px;
+}
 
-  .flip-card-back-alt {
+.flip-card-back-alt {
     background-color: #F0F0F0;
     color: rgb(5, 5, 5);
     transform: rotateY(180deg);
     border-radius: 12%;
-    width: 400px; 
-  }
-  .flip-card-back p, .flip-card-back-alt p {
+    width: 400px;
+}
+
+.flip-card-back p,
+.flip-card-back-alt p {
     padding-left: 15%;
     padding-right: 15%;
-  }
+}
 
-  .flip-card-back h1, .flip-card-back-alt h1 {
+.flip-card-back h1,
+.flip-card-back-alt h1 {
     padding: 5%;
-  }
+}
 
-  .workImg {
+.workImg {
     height: 400px;
     object-fit: contain;
 
-  }
+}
 
-  .buttonSeeMore {
+.buttonSeeMore {
     border-radius: 30px;
     border-color: #FF735C;
     background-color: #FF735C;
     font-family: 'Quicksand', sans-serif;
-    width: 218px; 
+    width: 218px;
     height: 58px;
     font-weight: bold !important;
     border: none;
     line-height: 58px;
     margin: 1%;
 
-  }
+}
+
+
+
+/* media queries */
+
+
+@media only screen and (max-width:1000px) {
+
+
+    .skillsFlex {
+        flex-direction: column;
+    }
+
+    .skillsContainer {
+        width: 100%;
+        padding-top: 15%;
+        margin: 0%;
+    }
+
+    .pinkBackground {
+        margin: auto;
+        padding-bottom: 5%;
+
+    }
+
+    .banner {
+        flex-direction: column;
+        height: 150px;
+    }
+
+    .pageHeading {
+        padding-left: 10%;
+    }
+
+    .aboutMeSection {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "textDiv" "cvButton" "ImgKatie";
+    }
+
+    .headingText {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .myUXSkills {
+        height: 120vh;
+
+    }
+
+    .myTechnicalSkills {
+
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "tskillsHeading tskillsHeading tskillsHeading tskillsHeading tskillsHeading"
+            "tskillsContainer1 . tskillsContainer3 . tskillsContainer4"
+            ". tskillsContainer2 . tskillsContainer5 . ";
+
+    }
+
+    .myWorkContainer {
+        height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "gridArea1 gridArea2 "
+            "gridArea3 gridArea4"
+            "gridArea5 gridArea6";
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subtitle {
+        padding: 6%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .footerRow {
+        flex-direction: column;
+
+    }
+
+    .mainSection {
+        height: 110vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 45vh 1fr 1fr 1fr;
+        grid-template-areas: "box" "quote" "text" "button";
+
+    }
+
+    .coralBox {
+        background-color: #FF735C;
+        height: 50vh;
+        width: 100%
+    }
+
+    .logoContainer {
+        position: relative;
+        top: 20vh;
+        text-align: right;
+    }
+
+    .quote {
+        align-items: center;
+        justify-content: center;
+        padding-top: 1%;
+        padding-bottom: 10%;
+    }
+
+    .aboutMe {
+        padding-bottom: 5%;
+    }
+
+    .homepageSection {
+        height: 110vh;
+    }
+
+    .myWorkContainer {
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "gridArea1"
+            "gridArea2"
+            "gridArea3"
+            "gridArea4"
+            "gridArea5"
+            "gridArea6";
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+
+
+}
