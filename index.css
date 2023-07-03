@@ -8,7 +8,7 @@ h1 {
     margin: 0%;
 }
 
-.inline-block {
+.inlineBlock {
     display: inline-block;
     vertical-align: top;
 
@@ -32,7 +32,7 @@ a:hover {
 }
 
 
-.flex-end {
+.flexEnd {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -41,10 +41,11 @@ a:hover {
 }
 
 
-.navbar-list {
+.navbarList {
     width: 100%;
     text-align: right;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .w40 {
@@ -71,7 +72,6 @@ a:hover {
 }
 
 
-
 .coralBox {
     background-color: #FF735C;
     height: 100vh;
@@ -81,7 +81,6 @@ a:hover {
     z-index: 2;
     width: 58%;
 }
-
 
 
 .logoContainer {
@@ -216,28 +215,25 @@ a:hover {
     margin: 1%
 }
 
-.Subtitlecontainer {
+.subtitleContainer {
     width: 100%;
-    height: 260px;
-    margin: 10%;
-
 }
 
 .subtitle {
     text-align: center;
     font-size: 2rem;
-    padding: 1%;
+    padding: 6%;
 
 }
 
 
 .footerRow {
-    height: 260px;
+    display: flex;
+    flex-direction: row;
     width: 100%;
     background-color: lightgrey;
-
+    justify-content: space-between;
 }
-
 
 
 .footerLogo {
@@ -248,51 +244,51 @@ a:hover {
     padding-bottom: 5%;
     padding-right: 2%;
     padding-left: 5%;
-    float: left;
-
-
 }
 
 .footerList {
     text-align: end;
-    padding-top: 5%;
     line-height: 40px;
-    padding-right: 2rem;
+    padding-right: 3%;
 }
 
 .footerList li {
     list-style-type: none;
 }
 
+.heading {
+    height: 320px;
+}
 
 .banner {
     width: 100%;
     background-color: #FF735C;
     height: 200px;
+    display: flex;
+    flex-direction: row;
 }
 
 
 .pageHeading {
     font-family: 'Patua One', cursive;
     font-size: 3.6rem;
-    line-height: 50px;
-    float: left;
+    line-height: 57px;
     text-align: right;
     width: 25%;
     display: inline-block;
     padding-top: 3%;
+    padding-left: 1%;
 
 
 }
-
 
 
 .headingText {
     font-size: 1.5rem;
     width: auto;
     text-align: left;
-    padding-left: 35%;
-    padding-top: 4%;
+    padding-left: 10%;
+    padding-top: 2%;
     padding-right: 20%;
 
 
@@ -301,7 +297,7 @@ a:hover {
 .aboutMeSection {
     display: grid;
     grid-template-columns: [first] 58% [line2] 42% [end];
-    grid-template-rows: 80% 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas: "textDiv ImgKatie" "cvButton ImgKatie";
     margin-left: 15%;
     margin-right: 15%;
@@ -311,12 +307,12 @@ a:hover {
 
 .textDiv {
     grid-area: textDiv;
+    height: 100%;
+
 }
 
 .aboutMeParagraph {
     font-size: 1.25rem;
-    float: left;
-    padding-top: 15%;
     padding-bottom: 10%;
     text-align: left;
 
@@ -342,37 +338,6 @@ a:hover {
     margin-top: 5%
 }
 
-/*
-
-.myUXSkills {
-    height: 60vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20% 80%;
-    grid-template-areas: "skillsHeading skillsHeading skillsHeading"
-        "skillsContainer1 skillsContainer2 skillsContainer3";
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-
-.skillsContainer1 {
-    grid-area: skillsContainer1;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-
-
-.skillsContainer2 {
-    grid-area: skillsContainer2;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-
-
-*/
 
 .skillsHeading {
     text-align: center;
@@ -381,25 +346,29 @@ a:hover {
     padding-top: 5%;
 }
 
+.navbarContainer {
+    width: 40%;
+}
+
 
 .skillsFlex {
     margin-left: 10%;
     margin-right: 10%;
-    height: 40vh;
-    display:flex;
+    display: flex;
     flex-direction: row;
 
 }
 
 .pinkBackground {
-    max-height: 320px;
-    height: 320px;
-    width:280px;
-    max-width: 280px;
+    max-height: 100%;
+    height: 100%;
+    width: 80%;
+    max-width: 80%;
     background-color: #FFD5CE;
-    margin: auto;
     text-align: center;
-    border-radius: 20%;
+    border-radius: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 
 }
 
@@ -422,102 +391,92 @@ a:hover {
 
 
 .myTechnicalSkills {
-    height: 30vh;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60% 40%;
+    grid-template-rows: auto auto;
     grid-template-areas: "tskillsHeading tskillsHeading tskillsHeading tskillsHeading tskillsHeading"
-        "tskillsContainer1 tskillsContainer2 tskillsContainer3 tskillsContainer4 tskillsContainer4";
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 10%;
+        "tskillsContainer1 tskillsContainer2 tskillsContainer3 tskillsContainer4 tskillsContainer5";
+    grid-gap: 5%;
+    margin-bottom: 5%;
 }
 
 .tskillsHeading {
-grid-area: tskillsHeading;
-text-align: center;
-margin: auto;
-padding-bottom: 5%;
-padding-top: 5%;
+    grid-area: tskillsHeading;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 .pinkCircle {
-    max-height: 150px;
-    height: 150px;
-    width: 150px;
-    max-width: 150px;
+    width: 100%;
+    height: 100%;
     background-color: #FFD5CE;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
-    border-radius: 100%;
-
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
-.tskillsContainer1 {
-    grid-area: tskillscontainer1;
+.skillsContainerCommon {
     height: 100%;
     width: 100%;
     text-align: center;
+    aspect-ratio: 1;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+.tSkillsContainer1 {
+    grid-area: tskillsContainer1;
 
 }
 
-.tskillsContainer2 {
-    grid-area: tskillscontainer2;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-
+.tSkillsContainer2 {
+    grid-area: tskillsContainer2;
 }
 
 
-.tskillsContainer3 {
-    grid-area: tskillscontainer3;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-
+.tSkillsContainer3 {
+    grid-area: tskillsContainer3;
 }
 
-.tskillsContainer4 {
-    grid-area: tskillscontainer4;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-
+.tSkillsContainer4 {
+    grid-area: tskillsContainer4;
 }
 
-.tskillsContainer5 {
-    grid-area: tskillscontainer5;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-
+.tSkillsContainer5 {
+    grid-area: tskillsContainer5;
 }
 
 
 .tSkillsLogo {
-    Height:90px;
-    text-align: center;
-   margin-top: 20%;
-   
+    object-fit: contain;
+    max-width: 50%;
+    max-height: 50%;
 }
- 
+
 .mazeLogo {
-    width:100px;
+    width: 100px;
 }
 
 .invisionLogo {
     border-radius: 20%;
-    
+
 }
 
 .myWorkContainer {
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "gridArea1 gridArea2 gridArea3"
-    "gridArea4 gridArea5 gridArea6";
+        "gridArea4 gridArea5 gridArea6";
     margin-left: 5%;
     margin-right: 5%;
 
@@ -526,7 +485,7 @@ padding-top: 5%;
 .myWork1 {
     grid-area: gridArea1;
     text-align: center;
- 
+
 }
 
 .myWork2 {
@@ -541,85 +500,258 @@ padding-top: 5%;
 
 }
 
+.myWork4 {
+    grid-area: gridArea4;
+    text-align: center;
+
+}
+
+.myWork5 {
+    grid-area: gridArea5;
+    text-align: center;
+
+}
+
+.myWork6 {
+    grid-area: gridArea6;
+    text-align: center;
+
+}
 
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
+
+.flipCard {
     background-color: transparent;
     width: 100%;
     height: 500px;
-    
     border-radius: 30%;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
+    perspective: 1000px;
+
+}
+
+.flipCardInner {
     position: relative;
     height: 500px;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+    display: flex;
+    justify-content: center;
+}
+
+
+.flipCard:hover .flipCardInner {
     transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back, .flip-card-back-alt {
+}
+
+.flipCardFront,
+.flipCardBack,
+.flipCardBackAlt {
     position: absolute;
     width: 100%;
     height: 400px;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
+}
 
-  
-  /* Style the back side */
-  .flip-card-back {
-    background-color:#FFD5CE;
+.flipCardBack {
+    background-color: #FFD5CE;
     color: rgb(5, 5, 5);
     transform: rotateY(180deg);
     border-radius: 12%;
-    width: 400px; 
-  }
+    width: 353px;
+}
 
-  .flip-card-back-alt {
+.flipCardBackAlt {
     background-color: #F0F0F0;
     color: rgb(5, 5, 5);
     transform: rotateY(180deg);
     border-radius: 12%;
-    width: 400px; 
-  }
-  .flip-card-back p, .flip-card-back-alt p {
+    width: 353px;
+}
+
+.flipCardBack p,
+.flipCardBackAlt p {
     padding-left: 15%;
     padding-right: 15%;
-  }
+}
 
-  .flip-card-back h1, .flip-card-back-alt h1 {
+.flipCardBack h1,
+.flipCardBackAlt h1 {
     padding: 5%;
-  }
+}
 
-  .workImg {
+.workImg {
     height: 400px;
     object-fit: contain;
 
-  }
+}
 
-  .buttonSeeMore {
+.buttonSeeMore {
     border-radius: 30px;
     border-color: #FF735C;
     background-color: #FF735C;
     font-family: 'Quicksand', sans-serif;
-    width: 218px; 
-    height: 58px;
+    width: 200px;
+    height: 44px;
     font-weight: bold !important;
     border: none;
-    line-height: 58px;
-    margin: 1%;
+    line-height: 44px;
+    display: block;
+    margin: 0 auto;
+}
 
-  }
+
+/* media queries */
+
+@media only screen and (max-width: 1200px) {
+
+        .myWorkContainer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "gridArea1 gridArea2 "
+            "gridArea3 gridArea4"
+            "gridArea5 gridArea6";
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+        .buttonContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .skillsFlex {
+        flex-direction: column;
+    }
+
+    .skillsContainer {
+        width: 100%;
+        padding-top: 15%;
+        margin: 0%;
+    }
+
+    .pinkBackground {
+        margin: auto;
+        padding-bottom: 5%;
+
+    }
+
+    .banner {
+        flex-direction: column;
+        height: 150px;
+    }
+
+    .pageHeading {
+        padding-left: 10%;
+    }
+
+    .aboutMeSection {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "textDiv" "cvButton" "ImgKatie";
+    }
+
+    .headingText {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .myTechnicalSkills {
+
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "tskillsHeading tskillsHeading tskillsHeading tskillsHeading tskillsHeading"
+            "tskillsContainer1 . tskillsContainer3 . tskillsContainer4"
+            ". tskillsContainer2 . tskillsContainer5 . ";
+        grid-gap: 0;
+    }
+
+
+
+    .subtitle {
+        padding: 6%;
+    }
+
+    .footerList {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .footerList ul {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbarContainer {
+        width: 100%;
+    }
+
+    .navigation {
+        z-index: 20;
+        height: 70px;
+    }
+
+    .footerRow {
+        flex-direction: column;
+
+    }
+
+    .mainSection {
+        grid-template-columns: 100%;
+        grid-template-rows: 45vh 1fr 1fr 1fr;
+        grid-template-areas: "box" "quote" "text" "button";
+
+    }
+
+    .coralBox {
+        background-color: #FF735C;
+        height: 50vh;
+        width: 100%
+    }
+
+    .logoContainer {
+        position: relative;
+        top: 20vh;
+        text-align: right;
+    }
+
+    .quote {
+        align-items: center;
+        justify-content: center;
+        padding-top: 1%;
+        padding-bottom: 10%;
+    }
+
+    .aboutMe {
+        padding-bottom: 5%;
+    }
+
+    .homepageSection {
+        height: auto;
+    }
+
+    .myWorkContainer {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "gridArea1"
+            "gridArea2"
+            "gridArea3" 
+            "gridArea4"
+            "gridArea5"
+            "gridArea6";
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+
+}
