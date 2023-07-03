@@ -662,6 +662,10 @@ a:hover {
         padding-right: 10%;
     }
 
+    .aboutMeParagraph {
+        padding-top: 15%;
+    }
+
     .myTechnicalSkills {
 
         grid-template-columns: auto auto auto auto auto;
