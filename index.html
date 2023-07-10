@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Quicksand:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -36,12 +37,15 @@
                 <h1>Poole</h1>
             </div>
 
+
+            <div class="arrow"><img class="bounceMe" src="images/downArrow.png"></div>
+
         </div>
     </section>
 
     <section class="homepageSection">
         <div class="mainSection">
-            <div class="quote">
+            <div class="quote quoteMove">
                 <h2 class="quoteMainText">
                     <span class="quoteSpeechMarks">“</span>The best way to predict the future is to design it<span
                         class="quoteSpeechMarks">”</span>
@@ -50,15 +54,15 @@
             </div>
 
 
-            <div class="aboutMe">
+            <div class="aboutMe moveBase quoteMove">
                 <h2 class=aboutMeText>Hi! I’m Katie, a user experience researcher & designer with a passion for
                     user-centred design.</h2>
             </div>
 
-            <div class="button">
+            <div class="button moveBase quoteMove">
                 <div class="buttonContainer">
-                    <a href="aboutme.html" class="buttonStyle buttonHover">About Me ></a>
-                    <a href="mywork.html" class="buttonStyle buttonHover">My Work ></a>
+                    <a href="aboutme.html" class="buttonStyle buttonHover">About Me &#x2192;</a>
+                    <a href="mywork.html" class="buttonStyle buttonHover">My Work &#x2192;</a>
                 </div>
             </div>
         </div>
@@ -77,14 +81,19 @@
                 <div class="flipCard">
                     <div class="flipCardInner">
                         <div class="flipCardFront">
-                            <img src="Images\FTC card.svg" class=workImg alt="Avatar">
+                            <div class="cardContainer">
+                                <img src="Images\FTC card.svg" class=workImg alt="Avatar">
+                                <div class="bottomRight">
+                                  <!--  <div class="turnButton"> ></div> -->
+                                </div>
+                            </div>
                         </div>
                         <div class="flipCardBack">
                             <h1>Federal Trade Commission Website Redesign</h1>
                             <p>Redesigned the website with a focus on navigation and UI to ensure simple and accessible
                                 navigation with a clean UI. I conducted extensive usability testing of the website to
                                 ensure the redesign was user-centric.</p>
-                            <a href="" class="buttonSeeMore buttonHover">See more ></a>
+                            <a href="" class="buttonSeeMore buttonHover">See more &#x2192;</a>
                         </div>
                     </div>
                 </div>
@@ -103,7 +112,7 @@
                                 data. Collaboratively brainstormed feature ideas. Designed and developed a clickable
                                 prototype and tested using Guerrilla testing methods.
                             </p>
-                            <a href="" class="buttonSeeMore buttonHover">See more ></a>
+                            <a href="" class="buttonSeeMore buttonHover">See more &#x2192;</a>
                         </div>
                     </div>
                 </div>
@@ -120,7 +129,7 @@
                             <p>We redesigned the website into a modern, trustworthy website with a high-quality
                                 responsive design that provides concise and factual information, a simple adoption
                                 process and effective contact with the charity.</p>
-                            <a href="" class="buttonSeeMore buttonHover">See more ></a>
+                            <a href="" class="buttonSeeMore buttonHover">See more &#x2192;</a>
                         </div>
                     </div>
                 </div>
@@ -135,7 +144,7 @@
                         <div class="flipCardBackAlt">
                             <h1>Coming Soon</h1>
                             <p>Coming Soon</p>
-                            <a href="" class="buttonSeeMore buttonHover">See more ></a>
+                            <a href="" class="buttonSeeMore buttonHover">See more &#x2192;</a>
                         </div>
                     </div>
                 </div>
@@ -153,7 +162,7 @@
                                 quantitative and qualitative research. Analysed research data to define a user persona
                                 and brainstormed app ideas. Created wireframes and a clickable prototype. Conducted
                                 Guerrilla testing to identify usability issues.</p>
-                            <a href="" class="buttonSeeMore buttonHover">See more ></a>
+                            <a href="" class="buttonSeeMore buttonHover">See more &#x2192;</a>
                         </div>
                     </div>
                 </div>
@@ -168,7 +177,7 @@
                         <div class="flipCardBackAlt">
                             <h1>Coming Soon</h1>
                             <p>Coming Soon</p>
-                            <a href="" class="buttonSeeMore buttonHover">See more ></a>
+                            <a href="" class="buttonSeeMore buttonHover">See more &#x2192;</a>
                         </div>
                     </div>
                 </div>
@@ -226,8 +235,8 @@
         <div class="footerList">
             <ul>
                 <li>klpoole21@gmail.com</li>
-                <li><img src="Images\iconmonstr-behance-3.svg" class="" alt="LinkedIn Logo"> <img
-                        src="Images\iconmonstr-linkedin-3.svg" class="" alt="Behance logo"></li>
+                <li><img src="Images\iconmonstr-behance-3.svg" class="socialLogo" alt="LinkedIn Logo"> <img
+                        src="Images\iconmonstr-linkedin-3.svg" class="socialLogo" alt="Behance logo"></li>
                 <li>www.katiepoole.co.uk © 2023</li>
             </ul>
         </div>
@@ -235,5 +244,7 @@
 
 
 </body>
+
+<script src="js/index.js"></script>
 
 </html>

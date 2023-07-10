@@ -46,6 +46,7 @@ a:hover {
     text-align: right;
     margin-bottom: 0;
     margin-top: 0;
+    font-size: 1.2rem;
 }
 
 .w40 {
@@ -131,6 +132,11 @@ a:hover {
     align-items: center;
     justify-content: center;
     padding-top: 10%;
+    transition: transform 1s;
+}
+
+.moveBase {
+    transition: transform 1s;
 }
 
 .button {
@@ -250,10 +256,16 @@ a:hover {
     text-align: end;
     line-height: 40px;
     padding-right: 3%;
+    font-size: 1.2rem;
+
 }
 
 .footerList li {
     list-style-type: none;
+}
+
+.socialLogo {
+    height: 40px;
 }
 
 .heading {
@@ -307,13 +319,10 @@ a:hover {
 
 .textDiv {
     grid-area: textDiv;
-    height: 100%;
-
 }
 
 .aboutMeParagraph {
     font-size: 1.25rem;
-    padding-bottom: 10%;
     text-align: left;
 
 }
@@ -467,6 +476,10 @@ a:hover {
 
 }
 
+.quoteMove {
+    transform: translate(0, 100vh);
+}
+
 .myWorkContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -597,6 +610,51 @@ a:hover {
     margin: 0 auto;
 }
 
+.arrow {
+    float: right;
+    position: relative;
+    top: 67vh;
+    margin: 2%;
+    
+}
+
+.bounceMe {
+    height: 35px;   
+    animation: bounceArrow .7s infinite;
+  }
+
+  .bottomRight {
+    display: none;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+  }
+
+  
+  .turnButton {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px #ffffff;
+    
+  }
+
+  .cardContainer {
+    height: 400px;
+    object-fit: contain;
+  }
+  @keyframes bounceArrow {
+    from {
+      margin-top: 0px;
+    }
+    50% {
+      margin-top: 7px;
+    }
+    to {
+      margin-top: 0px;
+    }
+  }
+  
 
 /* media queries */
 
@@ -660,6 +718,7 @@ a:hover {
 
     .aboutMeParagraph {
         padding-top: 15%;
+        margin: 0%;
     }
 
     .myTechnicalSkills {
@@ -688,6 +747,11 @@ a:hover {
         padding-left: 0;
         padding-right: 0;
     }
+
+   
+
+ 
+  
 }
 
 @media only screen and (max-width: 600px) {
@@ -752,6 +816,15 @@ a:hover {
         margin-right: 5%;
 
     }
+
+    .arrow {
+        display: none;
+    }
+
+    .bottomRight {
+        display: block;
+        }
+   
 
 
 }
